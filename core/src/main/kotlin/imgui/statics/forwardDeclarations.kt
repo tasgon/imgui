@@ -1,10 +1,9 @@
-package imgui.static
+package imgui.statics
 
 import gli_.has
 import glm_.L
 import glm_.f
 import glm_.i
-import glm_.vec2.Vec2
 import imgui.*
 import imgui.ImGui.createNewWindowSettings
 import imgui.ImGui.findOrCreateWindowSettings

@@ -12,7 +12,7 @@ import imgui.*
 import imgui.ImGui.format
 import imgui.ImGui.tempInputScalar
 import imgui.internal.classes.Rect
-import imgui.static.patchFormatStringFloatToInt
+import imgui.statics.patchFormatStringFloatToInt
 import kool.getValue
 import kool.setValue
 import unsigned.Ubyte

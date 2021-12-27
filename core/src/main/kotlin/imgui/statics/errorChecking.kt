@@ -1,4 +1,4 @@
-package imgui.static
+package imgui.statics
 
 import imgui.*
 import imgui.ImGui.end

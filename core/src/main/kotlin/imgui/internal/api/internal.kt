@@ -13,8 +13,8 @@ import imgui.internal.classes.ShrinkWidthItem
 import imgui.internal.classes.Window
 import imgui.internal.hash
 import imgui.internal.sections.NavLayer
-import imgui.static.findWindowFocusIndex
-import imgui.static.navRestoreLastChildNavWindow
+import imgui.statics.findWindowFocusIndex
+import imgui.statics.navRestoreLastChildNavWindow
 import uno.kotlin.NUL
 import java.util.*
 import java.util.regex.Pattern

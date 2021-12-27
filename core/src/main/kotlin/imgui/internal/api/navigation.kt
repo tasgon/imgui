@@ -1,6 +1,5 @@
 package imgui.internal.api
 
-import gli_.has
 import glm_.f
 import glm_.i
 import glm_.vec2.Vec2
@@ -10,8 +9,7 @@ import imgui.api.g
 import imgui.internal.classes.Rect
 import imgui.internal.classes.Window
 import imgui.internal.sections.*
-import imgui.static.navUpdateAnyRequestFlag
-import kotlin.math.max
+import imgui.statics.navUpdateAnyRequestFlag
 
 /** Gamepad/Keyboard Navigation */
 internal interface navigation {

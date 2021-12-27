@@ -29,7 +29,7 @@ import imgui.classes.Style
 import imgui.font.FontAtlas
 import imgui.internal.*
 import imgui.internal.sections.or
-import imgui.static.*
+import imgui.statics.*
 import org.lwjgl.system.Platform
 import imgui.WindowFlag as Wf
 import imgui.internal.sections.DrawListFlag as Dlf

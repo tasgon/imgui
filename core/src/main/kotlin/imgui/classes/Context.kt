@@ -12,7 +12,7 @@ import imgui.internal.DrawData
 import imgui.internal.classes.*
 import imgui.internal.hash
 import imgui.internal.sections.*
-import imgui.static.*
+import imgui.statics.*
 import java.io.File
 import java.nio.ByteBuffer
 import java.util.*
