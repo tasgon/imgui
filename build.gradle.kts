@@ -27,6 +27,9 @@ allprojects {
 
         testImplementation("io.kotest:kotest-runner-junit5-jvm:${findProperty("kotestVersion")}")
         testImplementation("io.kotest:kotest-assertions-core-jvm:${findProperty("kotestVersion")}")
+
+        constraints {
+        }
     }
 
     repositories {
@@ -112,5 +115,16 @@ allprojects {
     }
 
     // == Add access to the 'modular' variant of kotlin("stdlib"): Put this into a buildSrc plugin and reuse it in all your subprojects
-    configurations.all { attributes.attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, 8) }
+    configurations.all {
+        attributes.attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, 8)
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency {
+        if (requested.name == "lwjgl-bom") {
+            println("${requested.name}:${requested.version}")
+            useVersion(findProperty("lwjglVersion")!! as String)
+        }
+    }
 }
